@@ -39,7 +39,7 @@ function drawButton() {
 }
 
 // Check if the mouse click is inside the button
-canvas.addEventListener('touchstart', function(event) {
+canvas.addEventListener('click', function(event) {
 
     frameY = 3;
     playSound();
