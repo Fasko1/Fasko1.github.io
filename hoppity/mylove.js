@@ -41,6 +41,7 @@ function drawButton() {
 // Check if the mouse click is inside the button
 canvas.addEventListener('mousedown', function(event) {
     event.preventDefault();
+    frameY = 3;
     playSound();
 });
 
