@@ -39,7 +39,7 @@ function drawButton() {
 }
 
 // Check if the mouse click is inside the button
-canvas.addEventListener('touchend', function(event) {
+canvas.addEventListener('mousedown', function(event) {
     event.preventDefault();
     playSound();
 });
