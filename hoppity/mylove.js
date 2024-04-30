@@ -40,16 +40,11 @@ function drawButton() {
 
 // Check if the mouse click is inside the button
 canvas.addEventListener('touchstart', function(event) {
-    var rect = canvas.getBoundingClientRect();
-    var mouseX = event.touches[0].clientX - rect.left;
-    var mouseY = event.touches[0].clientY - rect.top;
 
-    if(mouseX > buttonX && mouseX < buttonX + buttonWidth && mouseY > buttonY && mouseY < buttonY + buttonHeight) {
-        
-        frameY = 3;
-        playSound();
+    frameY = 3;
+    playSound();
     }
-});
+);
 
 // Function to prevent scrolling on touch devices when touching the canvas
 canvas.addEventListener('touchmove', function(event) {
