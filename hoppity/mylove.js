@@ -39,15 +39,9 @@ function drawButton() {
 }
 
 // Check if the mouse click is inside the button
-canvas.addEventListener('click', function(event) {
-    var rect = canvas.getBoundingClientRect();
-    var mouseX = event.clientX - rect.left;
-    var mouseY = event.clientY - rect.top;
-
-    if(mouseX > buttonX && mouseX < buttonX + buttonWidth && mouseY > buttonY && mouseY < buttonY + buttonHeight) {
-        frameY = 3;
-        playSound();
-    }
+canvas.addEventListener('touchend', function(event) {
+    event.preventDefault();
+    playSound();
 });
 
 
