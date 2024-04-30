@@ -51,6 +51,13 @@ canvas.addEventListener('touchstart', function(event) {
     }
 });
 
+// Function to prevent scrolling on touch devices when touching the canvas
+canvas.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+});
+
+drawButton(); // Call the function to draw the button
+
  // Call the function to draw the button
 function animate(){
     
