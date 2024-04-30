@@ -45,6 +45,7 @@ canvas.addEventListener('click', function(event) {
     var mouseY = event.clientY - rect.top;
 
     if(mouseX > buttonX && mouseX < buttonX + buttonWidth && mouseY > buttonY && mouseY < buttonY + buttonHeight) {
+        frameY = 3;
         playSound();
     }
 });
